@@ -18,7 +18,7 @@ def add_member(id, name, age):
         print(e)
 
     finally:
-        conn.close()
+        cursor.close()
         conn.close()
 
 #Task 2
@@ -38,7 +38,7 @@ def add_workout_session(member_id, date, duration_minutes, calories_burned):
         print(e)
 
     finally:
-        conn.close()
+        cursor.close()
         conn.close()
 
 #Task 3
@@ -58,7 +58,7 @@ def update_member_age(member_id, new_age):
         print(e)
 
     finally:
-        conn.close()
+        cursor.close()
         conn.close()
 
 #Task 4
@@ -78,5 +78,5 @@ def delete_workout_session(session_id):
         print(e)
 
     finally:
-        conn.close()
+        cursor.close()
         conn.close()
